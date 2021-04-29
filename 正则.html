@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //匹配邮箱：/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/
+    console.log(/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/.test("yinzhao@live.cn"));
+    //匹配正整数：
+    let str = 'translateX(-70px)'
+    let result = -str.replace(/[^0-9]+/g,'')
+    //匹配手机号：/^(0|86|17951)?(13[0-9]|15[012356789]|166|17[3678]|18[0-9]|14[57])[0-9]{8}$/
+    //匹配身份证号：/^(^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$)|(^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])((\d{4})|\d{3}[Xx])$)$/
+    //匹配邮编号：/^[1-9]\d{5}(?!\d)$/
+    //只能输入数字：/^\d+$/
+    //匹配中文字符：/[\u4e00-\u9fa5]/gm 
+    //至少输入n个以上的数字：/^\d{n,}$/ 
+    //只能输入m到n个数字：/^\d{m,n}$/
+    //只能由英文，数字，下划线组成/^\w+$/
+  </script>
+</body>
+</html>
